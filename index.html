@@ -287,14 +287,14 @@
             }
 
             /* ==========================================
-           5. FEATURED WORK SECTION (COMPACT)
+           5. FEATURED WORK SECTION (MULTIPLE PROJECTS)
            ========================================== */
             .work-section {
                 padding: 3rem 8% 5rem 8%;
             }
 
             .section-header {
-                margin-bottom: 2rem;
+                margin-bottom: 2.5rem;
             }
 
             .section-title-outline {
@@ -312,7 +312,14 @@
                 font-weight: 500;
             }
 
-            /* Project Card - Compact Version */
+            /* Projects Container */
+            .projects-wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 2.5rem;
+            }
+
+            /* Project Card */
             .project-card {
                 background: var(--white);
                 border-radius: 18px;
@@ -322,6 +329,7 @@
                 grid-template-columns: 1fr 1fr;
                 max-width: 880px;
                 margin: 0 auto;
+                width: 100%;
                 box-shadow: 0 10px 25px rgba(8, 94, 104, 0.06);
                 transition: var(--transition);
             }
@@ -548,8 +556,7 @@
             </div>
 
             <div class="hero-image-wrapper">
-                <img src="YOUR_IMAGE_FROM_IMAGE_10.png" alt="Omar Hassan"
-                    class="hero-img">
+                <img src="YOUR_IMAGE_FROM_IMAGE_10.png" alt="Omar Hassan" class="hero-img">
             </div>
         </section>
 
@@ -610,44 +617,84 @@
             </div>
         </section>
 
-        <!-- Featured Work Section (Single Project) -->
+        <!-- Featured Work Section -->
         <section class="work-section" id="work">
             <div class="section-header">
                 <h2 class="section-title-outline">Featured Work.</h2>
-                <p class="section-subtitle">A showcase of my recent web design & development project.</p>
+                <p class="section-subtitle">A showcase of my recent web design & development projects.</p>
             </div>
 
-            <div class="project-card">
-                <div class="project-img-wrapper">
-                    <img src="602shots_so.png"
-                        alt="Featured Project Preview">
-                </div>
-
-                <div class="project-info">
-                    <span class="project-tag">Web Application</span>
-                    <h3 class="project-title">Modern Beverage Landing Page</h3>
-                    <p class="project-description">
-                        A vibrant, highly interactive web landing page featuring custom CSS animations, modern layout
-                        structures, and high performance across all screen sizes.
-                    </p>
-
-                    <div class="project-tech">
-                        <span class="tech-pill">HTML5</span>
-                        <span class="tech-pill">CSS3</span>
-                        <span class="tech-pill">JavaScript</span>
-                        <span class="tech-pill">Figma</span>
+            <div class="projects-wrapper">
+                <!-- Project 1: Beverage Landing Page -->
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="602shots_so.png" alt="Featured Project Preview">
                     </div>
 
-                    <div class="project-actions">
-                        <a href="https://fresh-shop-design1.vercel.app/" target="_blank" class="btn-project btn-project-primary">
-                            <span>Live Preview</span>
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                        <a href="https://github.com/OMAR-RH-THE-PROGRAMMER/FRESH-SHOP-DESIGN" target="_blank"
-                            class="btn-project btn-project-secondary">
-                            <i class="fa-brands fa-github"></i>
-                            <span>Source Code</span>
-                        </a>
+                    <div class="project-info">
+                        <span class="project-tag">Web Application</span>
+                        <h3 class="project-title">Modern Beverage Landing Page</h3>
+                        <p class="project-description">
+                            A vibrant, highly interactive web landing page featuring custom CSS animations, modern
+                            layout
+                            structures, and high performance across all screen sizes.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-pill">HTML5</span>
+                            <span class="tech-pill">CSS3</span>
+                            <span class="tech-pill">JavaScript</span>
+                            <span class="tech-pill">Figma</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://fresh-shop-design1.vercel.app/" target="_blank"
+                                class="btn-project btn-project-primary">
+                                <span>Live Preview</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/OMAR-RH-THE-PROGRAMMER/FRESH-SHOP-DESIGN" target="_blank"
+                                class="btn-project btn-project-secondary">
+                                <i class="fa-brands fa-github"></i>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Luxury Flower Store -->
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="800shots_so.png" alt="Worod Store Preview">
+                    </div>
+
+                    <div class="project-info">
+                        <span class="project-tag">E-Commerce Application</span>
+                        <h3 class="project-title">Worod Store - Luxury Flower Shop</h3>
+                        <p class="project-description">
+                            An elegant, fully interactive flower store landing page designed with modern layout
+                            structures, seamless dynamic components, and responsive aesthetics.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-pill">React.js</span>
+                            <span class="tech-pill">Tailwind CSS</span>
+                            <span class="tech-pill">AI Workflow</span>
+                            <span class="tech-pill">Figma</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://worod-store.vercel.app/" target="_blank"
+                                class="btn-project btn-project-primary">
+                                <span>Live Preview</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/OMAR-RH-THE-PROGRAMMER/worod-store-" target="_blank"
+                                class="btn-project btn-project-secondary">
+                                <i class="fa-brands fa-github"></i>
+                                <span>Source Code</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -656,3 +703,4 @@
     </body>
 
 </html>
+]
